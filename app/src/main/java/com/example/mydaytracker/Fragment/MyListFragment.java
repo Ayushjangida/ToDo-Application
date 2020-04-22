@@ -137,7 +137,7 @@ public class MyListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_mylists, container, false);
         listView = view.findViewById(R.id.my_list_listView);
         color[0] = Color.BLACK;
-        noListText = view.findViewById(R.id.my_list_no_list_textview);
+        noListText = view.findViewById(R.id.my_list_no_list_text);
 
 
         Log.d(TAG, "addList: " + color[0]);
