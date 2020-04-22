@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/login_activity_email_edittext"
+            android:hint="@string/email"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/login_activity_password_edittext"
+            android:layout_below="@+id/login_activity_email_edittext"
+            android:hint="@string/password"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/login_activity_loginbutton"
+            android:layout_below="@+id/login_activity_password_edittext"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:text="Login"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+        android:id="@+id/login_activity_create_accountbutton"
+        android:layout_below="@+id/login_activity_resend_email_accountbutton"
+        android:background="@android:color/transparent"
+        android:text="create account"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="40dp"
+        android:textSize="11sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/login_activity_resend_email_accountbutton"
+            android:layout_below="@id/login_activity_loginbutton"
+            android:background="@android:color/transparent"
+            android:text="Resend email"
+            android:visibility="invisible"
+            android:textColor="@android:color/black"
+            android:textSize="11sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/login_activity_progressbar"
+            android:layout_below="@+id/login_activity_create_accountbutton"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
